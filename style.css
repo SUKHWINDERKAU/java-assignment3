@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+/*                                                                
+css starts 
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+/* body design */
+body{
+     min-height: 100vh;
+     overflow-x: hidden;
+
+}
+/******************************* header ***********************************/
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px, 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+/* logo */
+.logo{
+    font-size: 2em;
+    color: #fff;
+    user-select: none;
+}
+/* navbar pointing links */
+.navigation a{
+    position: relative;
+    font-size: 1.1em;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 20px;
+    padding: 6px 15px;
+    transition: .5s;
+
+}
+/* navbar pointing links that are hover and active*/
+.navigation a :hover,
+.navigation a.active
+{
+    color: #333;
+
+}
+/* setting for nav bar*/
+.navigation a span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width:100%;
+    background-color: #fff;
+    border-radius: 30px;
+    z-index:-1;
+    transform: scale(0);
+    opacity: 0;
+    transition: .5s;
+
+}
+/* navbar pointing links that are hover span and active span*/
+.navigation a :hover span,
+.navigation a.active span
+{
+    transform: scale(1);
+    opacity: 1;
+
+}
+/*section where java script is applied */
+.parallax{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url("background.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+
+}
+/*id text targeted*/
+#text{
+    position: absolute;
+    font-size: 5em;
+    color: #1b283a;
+    text-shadow: 2px 4px 5px #f9f9f9;
+
+
+}
+/*images are targeted*/
+.parallax img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    pointer-events: none;
+}
+.parallax img#gate-left{
+    position: fixed;
+    transform: translateX(-282px);
+
+}
+.parallax img#gate-right{
+    position: fixed;
+    transform: translateX(305px);
+
+
+}
+.sec{
+    position: relative;
+    background:#020912;
+    padding: 30px 100px ;
+
+
+}
+.sec h2{
+    font-size: 3em;
+    color: #fff;
+    margin-bottom: 10px;
+
+}
+.sec p{
+    font-size: 1em;
+    color: #fff;
+    font-weight: 300;
+    text-align: justify;
+}
+/* formating for service page*/
+.parallax-section {
+    background:url("OIP\ \(1\).jpeg");
+    
+    background-size: cover;
+    
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .parallax-content {
+    background-color: #090909;
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    margin: 0 2rem;
+   
+    padding: 2em;
+  
+  }
+  
+  .parallax-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .parallax-content p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .parallax-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-weight: 300;
+  }
+  
+  .parallax-content li {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+  /* formating for table in contact*/
+  table{
+    padding: 2em 25em 2em 35em;
+    color: white;
+
+
+ }
+ table th{
+    text-align: center;
+ }
+ table td{
+    text-align: left;
+ }
